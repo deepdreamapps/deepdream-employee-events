@@ -1,4 +1,5 @@
 package cm.deepdream.employee.events;
+import java.time.LocalDate;
 import java.time.ZonedDateTime;
 import org.springframework.format.annotation.DateTimeFormat;
 import lombok.AllArgsConstructor;
@@ -16,7 +17,11 @@ public class EmployeeSuspendedEvent {
 	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss Z")
 	private ZonedDateTime eventDate ;
 	
-	private Integer durationMonths ;
+	private LocalDate suspensionDate ;
 	
-	private Integer durationDays ;
+	private Integer suspensionDurationMonths ;
+	
+	private Integer suspensionDurationDays ;
+	
+	private Long userId ;
 }

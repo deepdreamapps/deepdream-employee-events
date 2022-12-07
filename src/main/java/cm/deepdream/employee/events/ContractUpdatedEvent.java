@@ -32,4 +32,5 @@ public class ContractUpdatedEvent {
 	
 	private BigDecimal baseSalary ;
 	
+	private Long userId ;
 }

@@ -31,4 +31,6 @@ public class ContractStartedEvent {
 	
 	private BigDecimal baseSalary ;
 	
+	private Long userId ;
+	
 }

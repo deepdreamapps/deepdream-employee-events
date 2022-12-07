@@ -18,6 +18,8 @@ public class ContractTerminatedEvent {
 	private ZonedDateTime eventDate ;
 	
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
-	private LocalDate terminationDate ;
+	private LocalDate endDate ;
+	
+	private Long userId ;
 	
 }

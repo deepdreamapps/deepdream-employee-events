@@ -11,7 +11,7 @@
 	<groupId>cm.deepdream</groupId>
 	<artifactId>employee-events</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>salari-employee-events</name>
+	<name>employee-events</name>
 	<description>deepdream-employee-events project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>

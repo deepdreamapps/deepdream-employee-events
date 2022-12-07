@@ -35,6 +35,10 @@ public class EmployeeUpdatedEvent {
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private LocalDate birthDate ;
 	
+	private String socialSecurityNumber ;
+	
+	private Integer retirementAge ;
+	
 	private String phoneNumber ;
 	
 	private String emailAddress ;
@@ -44,6 +48,8 @@ public class EmployeeUpdatedEvent {
 	private Long positionId ;
 
 	private Long unitId ;
+	
+	private Long functionId ;
 
 	private Long categoryId ;
 
@@ -73,5 +79,7 @@ public class EmployeeUpdatedEvent {
 	private Long operatorId ;
 
 	private String momoNumber ;
+	
+	private Long userId ;
 	
 }

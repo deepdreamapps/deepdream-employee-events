@@ -4,6 +4,8 @@ import java.time.LocalDate;
 import java.time.ZonedDateTime;
 
 import org.springframework.format.annotation.DateTimeFormat;
+
+import cm.deepdream.employee.enums.ContractType;
 import cm.deepdream.employee.enums.Gender;
 import cm.deepdream.employee.enums.MaritalStatus;
 import lombok.AllArgsConstructor;
@@ -15,6 +17,8 @@ import lombok.NoArgsConstructor;
 @Data
 public class EmployeeCreatedEvent {
 	private Long id ;
+	
+	private Long employeeId ;
 	
 	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss Z")
 	private ZonedDateTime eventDate ;
@@ -32,6 +36,10 @@ public class EmployeeCreatedEvent {
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private LocalDate birthDate ;
 	
+	private String socialSecurityNumber ;
+	
+	private Integer retirementAge ;
+	
 	private String phoneNumber ;
 	
 	private String emailAddress ;
@@ -41,21 +49,14 @@ public class EmployeeCreatedEvent {
 	private Long positionId ;
 
 	private Long unitId ;
+	
+	private Long functionId ;
 
 	private Long categoryId ;
 
 	private Long echelonId ;
 
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
-	private LocalDate hiringDate ;
-
-	private String contractType ;
-	
-	private Integer contractDuration ;
-	
-	private Double weeklyWorkingHours ;
-	
-	private BigDecimal baseSalary ;
 
 	private Integer children ;
 
@@ -70,4 +71,6 @@ public class EmployeeCreatedEvent {
 	private Long operatorId ;
 
 	private String momoNumber ;
+	
+	private Long userId ;
 }

@@ -16,8 +16,6 @@ public class SuspensionTerminatedEvent {
 	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss Z")
 	private ZonedDateTime eventDate ;
 	
-	private Integer durationDays ;
-	
-	private Integer durationMonths ;
+	private Long userId ;
 	
 }

@@ -1,4 +1,5 @@
 package cm.deepdream.employee.events;
+import java.time.LocalDate;
 import java.time.ZonedDateTime;
 
 import org.springframework.format.annotation.DateTimeFormat;
@@ -18,6 +19,14 @@ public class EmployeeAppointedEvent {
 	@DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss Z")
 	private ZonedDateTime eventDate ;
 	
+	private LocalDate appointmentDate ;
+	
 	private Long positionId ;
+	
+	private Long unitId ;
+	
+	private Long functionId ;
+	
+	private Long userId ;
 	
 }
